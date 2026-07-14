@@ -28,7 +28,7 @@ float Ghost::getSpeed(int level) const {
     if (mode == GMode::Frightened) return 2.1f * speedJitter;
     if (mode == GMode::Eaten || mode == GMode::Entering) return 10.0f;
     if (mode == GMode::Exiting) return 2.0f;
-    return (2.4f + std::min(level - 1, 6) * 0.15f) * speedJitter;
+    return (1.8f + std::min(level - 1, 6) * 0.15f) * speedJitter;
 }
 
 // Kiểm tra xem có con ma nào KHÁC đang đứng tại (x,y) hoặc đang nhắm tới (x,y) hay không.
